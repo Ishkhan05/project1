@@ -5,6 +5,8 @@
   a,p{
     color: #2B1414;
     font-weight: 400;
+    margin: 0;
+    display: flex;
   }
   &_head{
     height: 48px;
@@ -22,8 +24,11 @@
       width: 50%;    
       display: flex;
       justify-content: space-around;
-      p{
-        margin: 0;
+      .geo,.phone,.cart{
+        display: flex;
+        i{
+          margin-right: 5px;
+        }
       }
       .webs{
         width: 20%;
@@ -42,6 +47,9 @@
       width: 40%;
       display: flex;
       justify-content: space-around;
+      img{
+        margin-left: 5px;
+      }
     }
     .right_side{
       width: 40%;

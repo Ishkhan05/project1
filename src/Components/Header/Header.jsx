@@ -13,16 +13,22 @@ export default function Header() {
           <Link to="/">Contacts</Link>
         </div>
         <div className='Header_head__right_side'>
-          <i className="bi bi-geo-alt"></i>
-          <p>
-            !!!Kapan!!!
-          </p>
-          <p>8 812 309-82-88</p>
-          <p>CART</p>
+          <div className='geo'>
+            <i className="bi bi-geo-alt"></i>
+            <p>Kapan</p>
+          </div>
+          <div className='phone'>
+            <i className="bi bi-phone"></i>
+            <p>8 812 309-82-88</p>
+          </div>
+          <div className='cart'>
+            <i className="bi bi-cart"></i>
+            <p>CART</p>
+          </div>
           <div className='webs'>
-            <Link to="/">telegram</Link>
-            <Link to="/">vk</Link>
-            <Link to="/">ok</Link>
+            <Link to="/"><img src="Images/tg.png" /></Link>
+            <Link to="/"><img src="Images/vk.png" /></Link>
+            <Link to="/"><img src="Images/ok.png" /></Link>
           </div>
         </div>
       </div>

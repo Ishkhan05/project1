@@ -43,4 +43,4 @@ const initialChooseState = [
   },
 ]
 
-export initialChooseState
+export default initialChooseState

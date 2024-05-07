@@ -8,19 +8,19 @@ export default function Footer() {
       <div className='first_content'>
         <div className='first_content-about'>
           <div>
-            <img src="Images/Frame.png"/>
+            <img src="./Images/Frame.png" />
             <p>We cook by hand and with love</p>
           </div>
           <div>
-            <img src="Images/Group 18.svg"/>
+            <img src="./Images/Group 18.svg" />
             <p>We will deliver it on the day of the order</p>
           </div>
           <div>
-            <img src="Images/Vector.png"/>
+            <img src="./Images/Vector.png" />
             <p>100% almond flour and natural ingredients</p>
           </div>
         </div>
-        <p>© 2021 MacaronShop <br/> Quantum LLC, St. Petersburg, Marshal Tukhachevsky Street, 22</p>
+        <p>© 2021 MacaronShop <br /> Quantum LLC, St. Petersburg, Marshal Tukhachevsky Street, 22</p>
       </div>
       <div className='second_content'>
         <div className='info_links'>
@@ -50,9 +50,9 @@ export default function Footer() {
           <p>from 9:00 to 21:00</p>
         </div>
         <div className='social'>
-          <Link to="/"><img src="Images/instagram.png"/></Link>
-          <Link to="/"><img src="Images/facebook.png"/></Link>
-          <Link to="/"><img src="Images/vkontakte.png"/></Link> 
+          <Link to="/"><img src="Images/instagram.png" /></Link>
+          <Link to="/"><img src="Images/facebook.png" /></Link>
+          <Link to="/"><img src="Images/vkontakte.png" /></Link>
         </div>
       </div>
     </footer>

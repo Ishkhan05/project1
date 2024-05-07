@@ -1,31 +1,29 @@
-.Slider1{
-  
-  .slick-slider{
-
-    .slick-arrow{
+.Slider1 {
+  .slick-slider {
+    .slick-arrow {
       background-color: red;
       width: 0;
       height: 0;
     }
-    .slick-list{
+    .slick-list {
       color: white;
       margin: 0 auto;
-      .slick-slide{
+      .slick-slide {
         width: 270px;
-        div{
+        div {
           width: 270px;
           height: 380px;
           border-radius: 5px;
           position: relative;
           padding: 0;
-          h4{
+          h4 {
             position: absolute;
             padding: 0 10px 0 10px;
-            border-radius: 0 10px 10px 0; 
+            border-radius: 0 10px 10px 0;
           }
-          div{
+          div {
             border-radius: 0;
-            p{
+            p {
               margin: 0 auto;
               padding: 20px;
             }
@@ -33,10 +31,18 @@
         }
       }
     }
-    .slick-dots{
+    .slick-dots {
       list-style-type: square;
-      li{
+      li {
         float: right;
+        button {
+          width: 10px;
+          height: 10px;
+          &::before {
+            opacity: 1;
+            color: red !important;
+          }
+        }
       }
     }
   }

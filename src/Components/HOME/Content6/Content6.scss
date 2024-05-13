@@ -1,0 +1,19 @@
+.Content6{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  &_items{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 20px;
+    &_item{
+      width: 270px;
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+}

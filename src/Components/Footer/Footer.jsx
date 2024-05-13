@@ -50,9 +50,9 @@ export default function Footer() {
           <p>from 9:00 to 21:00</p>
         </div>
         <div className='social'>
-          <Link to="/"><img src="Images/instagram.png" /></Link>
-          <Link to="/"><img src="Images/facebook.png" /></Link>
-          <Link to="/"><img src="Images/vkontakte.png" /></Link>
+          <Link to="https://www.instagram.com/" target='_blank'><img src="Images/instagram.png" /></Link>
+          <Link to="https://www.facebook.com/" target='_blank'><img src="Images/facebook.png" /></Link>
+          <Link to="https://vk.com/" target='_blank'><img src="Images/vkontakte.png" /></Link>
         </div>
       </div>
     </footer>

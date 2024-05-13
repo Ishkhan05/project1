@@ -1,0 +1,42 @@
+.Slider2 {
+  padding-left: 70px;
+  .slick-slider {
+    .slick-list {
+      .slick-slide {
+        div {
+          width: 371px;
+          height: 420px;
+          border: 1px solid rgb(233, 233, 233);
+          .item_info{
+            border: none;
+            p{
+              margin: 0;
+              padding: 10px;
+            }
+            h3 {
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 21.94px;
+              padding-left: 10px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+    .slick-dots {
+      list-style-type: square;
+      li {
+        float: right;
+        button {
+          width: 10px;
+          height: 10px;
+          &::before {
+            opacity: 1;
+            color: red !important;
+          }
+        }
+      }
+    }
+  }
+}

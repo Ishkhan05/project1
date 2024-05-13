@@ -6,7 +6,7 @@ import "./Content2.scss"
 
 export default function Content2() {
   const items = useSelector(getAllItems)
-  
+
   return (
     <div className='Content2'>
       {

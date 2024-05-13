@@ -1,5 +1,8 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import chooseSlice from '../features/Choose/chooseSlice';
+import popularSetsSlice from '../features/PopularSets/popularSetsSlice';
+import careSlice from '../features/Care/careSlice';
+
 import {
   persistStore,
   persistReducer,
@@ -16,11 +19,13 @@ const persistConfig = {
   key: 'root',
   version: 1,
   storage,
-  whitelist: ['choose'],
+  whitelist: ['choose', 'popularSets','care'],
 }
 
 const rootReducer = combineReducers({
   choose: chooseSlice,
+  popularSets: popularSetsSlice,
+  care: careSlice
 })
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)

@@ -26,9 +26,9 @@ export default function Header() {
             <p>CART</p>
           </div>
           <div className='webs'>
-            <Link to="/"><img src="Images/tg.png" /></Link>
-            <Link to="/"><img src="Images/vk.png" /></Link>
-            <Link to="/"><img src="Images/ok.png" /></Link>
+            <Link to="https://web.telegram.org/k/" target='_blank'><img src="Images/tg.png" /></Link>
+            <Link to="https://vk.com/" target='_blank'><img src="Images/vk.png" /></Link>
+            <Link to="https://ok.ru/" target='_blank'><img src="Images/ok.png" /></Link>
           </div>
         </div>
       </div>

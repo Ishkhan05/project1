@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Start from '../../Components/HOME/Start/Start'
 import Header from "../../Components/Header/Header"
 import Footer from "../../Components/Footer/Footer"
@@ -9,6 +9,7 @@ import Content5 from '../../Components/HOME/Content5/Content5'
 import Content6 from '../../Components/HOME/Content6/Content6'
 
 export default function Home() {
+  
   return (
     <div>
       <Header />

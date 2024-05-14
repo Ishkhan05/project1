@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import "./Header.scss"
+import SignIn from '../Modal/SignIn/SignIn';
+import SignUp from '../Modal/SignUp/SignUp';
 
 export default function Header() {
+  const [signIn, setSignIn] = useState(false)
+  const [signUp, setSignUp] = useState(false)
+
+  const handleSignIn = ()=>{
+    setSignIn(!signIn)
+  }
+  const handleSignUp = ()=>{
+    setSignUp(!signUp)
+  }
+
   return (
     <div className='Header'>
+      {signIn ? <SignIn/> :null}
+      {signUp ? <SignUp/> :null}
       <div className='Header_head'>
         <div className='Header_head__left_side'>
           <Link to="/">Freshness guarantee</Link>
@@ -27,8 +41,10 @@ export default function Header() {
           </div>
           <div className='webs'>
             <Link to="https://web.telegram.org/k/" target='_blank'><img src="Images/tg.png" /></Link>
-            <Link to="https://vk.com/" target='_blank'><img src="Images/vk.png" /></Link>
-            <Link to="https://ok.ru/" target='_blank'><img src="Images/ok.png" /></Link>
+            {/* <Link to="https://vk.com/" target='_blank'><img src="Images/vk.png" /></Link> */}
+            {/* <Link to="https://ok.ru/" target='_blank'><img src="Images/ok.png" /></Link> */}
+            <button onClick={handleSignIn}>Sign In</button>
+            <button onClick={handleSignUp}>Sign Up</button>
           </div>
         </div>
       </div>

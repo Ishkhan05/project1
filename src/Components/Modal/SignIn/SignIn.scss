@@ -1,0 +1,62 @@
+.SignIn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: fixed;
+  inset: 0 0 0 0;
+  z-index: 9999;
+  background-color: rgba($color: #111, $alpha: 0.7);
+  i{
+    position: fixed;
+    top: 90px;
+    right: 460px;
+    color: rgba(255, 255, 255, 0.41);
+    &:hover{
+      scale: 1.1;
+      cursor: pointer;
+    }
+  }
+  &_content{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(247, 235, 229, 1);
+    align-items: center;
+    width: 570px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    form{
+      display: flex;
+      flex-direction: column;
+      a{
+        font-size: 14px;
+        font-weight: 400;
+        padding:0 0 0 240px;
+        color: rgba(231, 66, 106, 1);
+      }
+      input{
+        width: 370px;
+        height: 50px;
+        margin: 5px 0 10px 0;
+        border: none;
+        font-size: 24px;
+        &[type="submit"]{
+          background-color: rgba(231, 66, 106, 1);
+          color: white;
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+          letter-spacing: 1px;
+          &:hover{
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    a{
+      font-size: 14px;
+      font-weight: 600;
+      color: rgba(231, 66, 106, 1);
+    }
+  }
+}

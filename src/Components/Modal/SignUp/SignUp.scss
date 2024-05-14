@@ -1,4 +1,4 @@
-.SignUp{
+.SignUp {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,26 +7,26 @@
   inset: 0 0 0 0;
   z-index: 9999;
   background-color: rgba($color: #111, $alpha: 0.7);
-  &_content{
+  &_content {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 971px;
-    justify-content: center;  
+    justify-content: center;
     background-color: rgba(247, 235, 229, 1);
     border-radius: 5px;
-    h1{
+    h1 {
       margin-bottom: 0;
     }
-    form{
+    form {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 35px;
-      div{
+      div {
         display: flex;
         flex-direction: column;
-        input{
+        input {
           width: 370px;
           height: 50px;
           border: none;
@@ -34,7 +34,7 @@
           margin: 5px 0 5px 0;
         }
       }
-      input[type="submit"]{
+      input[type="submit"] {
         width: 791px;
         height: 50px;
         background-color: rgba(231, 66, 106, 1);
@@ -44,25 +44,25 @@
         letter-spacing: 1px;
         border: none;
         cursor: pointer;
-        &:hover{
+        &:hover {
           font-size: 15px;
         }
       }
     }
-    span{
-      font-size: 11px;
-      font-weight: 400;
-      text-align: center;
-    }
   }
-  i{
+  i {
     position: fixed;
     top: 2px;
     right: 260px;
     color: rgba(255, 255, 255, 0.41);
-    &:hover{
+    &:hover {
       scale: 1.1;
       cursor: pointer;
     }
+  }
+  &__footer {
+    width: 80%;
+    margin: 0px auto;
+    padding: 12px;
   }
 }

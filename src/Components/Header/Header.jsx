@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
-import "./Header.scss"
 import SignIn from '../Modal/SignIn/SignIn';
 import SignUp from '../Modal/SignUp/SignUp';
+import "./Header.scss"
 
 export default function Header() {
   const [signIn, setSignIn] = useState(false)
@@ -14,11 +14,22 @@ export default function Header() {
   const handleSignUp = ()=>{
     setSignUp(!signUp)
   }
-
+  const handleClose = ()=>{
+    setSignUp(false)
+    setSignIn(false)
+  }
+  const handleRegister = ()=>{
+    setSignIn(false)
+    setSignUp(!signUp)
+  }
+  const handleLogin = ()=>{
+    setSignUp(false)
+    setSignIn(!signIn)
+  }
   return (
     <div className='Header'>
-      {signIn ? <SignIn/> :null}
-      {signUp ? <SignUp/> :null}
+      {signIn ? <SignIn handleClose={handleClose} handleRegister={handleRegister}/> :null}
+      {signUp ? <SignUp handleClose={handleClose} handleLogin={handleLogin}/> :null}
       <div className='Header_head'>
         <div className='Header_head__left_side'>
           <Link to="/">Freshness guarantee</Link>
@@ -27,22 +38,10 @@ export default function Header() {
           <Link to="/">Contacts</Link>
         </div>
         <div className='Header_head__right_side'>
-          <div className='geo'>
-            <i className="bi bi-geo-alt"></i>
-            <p>Kapan</p>
-          </div>
-          <div className='phone'>
-            <i className="bi bi-phone"></i>
-            <p>8 812 309-82-88</p>
-          </div>
-          <div className='cart'>
-            <i className="bi bi-cart"></i>
-            <p>CART</p>
-          </div>
-          <div className='webs'>
-            <Link to="https://web.telegram.org/k/" target='_blank'><img src="Images/tg.png" /></Link>
-            {/* <Link to="https://vk.com/" target='_blank'><img src="Images/vk.png" /></Link> */}
-            {/* <Link to="https://ok.ru/" target='_blank'><img src="Images/ok.png" /></Link> */}
+          <p><i className="bi bi-geo-alt"></i> Kapan</p>
+          <p><i className="bi bi-phone"></i> 8 812 309-82-88</p>
+          <p><i className="bi bi-cart"></i> CART</p>
+          <div className='login'>
             <button onClick={handleSignIn}>Sign In</button>
             <button onClick={handleSignUp}>Sign Up</button>
           </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import "./Footer.scss"
+import ROUTES from '../../routes';
 
 export default function Footer() {
   return (
@@ -26,7 +27,7 @@ export default function Footer() {
         <div className='info_links'>
           <h4>INFO</h4>
           <Link to="/">About the company</Link>
-          <Link to="/">Guarantees of taste and freshness</Link>
+          <Link to={ROUTES.GUARANTEES}>Guarantees of taste and freshness</Link>
           <Link to="/">Delivery and payment</Link>
           <Link to="/">Contacts</Link>
         </div>

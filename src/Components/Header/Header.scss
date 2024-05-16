@@ -18,18 +18,22 @@
       width: 50%;
       display: flex;
       justify-content: space-around;
-      .geo,
-      .phone,
-      .cart {
+      .login{
         display: flex;
-        i {
-          margin-right: 5px;
+        align-items: center;
+        gap: 10px;
+        button{
+          padding: 0.6rem 1rem;
+          border: 0;
+          font-weight: 700;
+          border-radius: 6px;
+          background-color: royalblue;
+          color: white;
+          cursor: pointer;
+          &:hover{
+            scale: 0.95;
+          }
         }
-      }
-      .webs {
-        width: 20%;
-        display: flex;
-        justify-content: space-around;
       }
     }
   }

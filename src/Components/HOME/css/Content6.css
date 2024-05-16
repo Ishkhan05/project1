@@ -1,0 +1,19 @@
+.Content6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+.Content6_items {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 20px;
+}
+.Content6_items_item {
+  width: 270px;
+}
+.Content6_items_item p {
+  font-size: 14px;
+}/*# sourceMappingURL=Content6.css.map */

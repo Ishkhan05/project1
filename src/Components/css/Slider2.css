@@ -1,0 +1,36 @@
+.Slider2 {
+  padding-left: 70px;
+}
+.Slider2 .slick-slider .slick-list .slick-slide div {
+  width: 371px;
+  height: 420px;
+  border: 1px solid rgb(233, 233, 233);
+}
+.Slider2 .slick-slider .slick-list .slick-slide div .item_info {
+  border: none;
+}
+.Slider2 .slick-slider .slick-list .slick-slide div .item_info p {
+  margin: 0;
+  padding: 10px;
+}
+.Slider2 .slick-slider .slick-list .slick-slide div .item_info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.94px;
+  padding-left: 10px;
+  margin: 0;
+}
+.Slider2 .slick-slider .slick-dots {
+  list-style-type: square;
+}
+.Slider2 .slick-slider .slick-dots li {
+  float: right;
+}
+.Slider2 .slick-slider .slick-dots li button {
+  width: 10px;
+  height: 10px;
+}
+.Slider2 .slick-slider .slick-dots li button::before {
+  opacity: 1;
+  color: red !important;
+}/*# sourceMappingURL=Slider2.css.map */

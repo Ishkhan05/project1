@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 
 export default function Content4() {
   const sets = useSelector(getAllItems)
-  console.log(sets)
   return (
     <div className='Content4'>
       <h1>Popular sets</h1>

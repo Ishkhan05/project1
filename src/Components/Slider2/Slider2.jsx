@@ -1,6 +1,6 @@
 import React from 'react'
 import Slider from 'react-slick'
-import initialNewsSliderState from '../../Constants/newsSlider'
+import initialNewsState from '../../Constants/news'
 import "./Slider2.scss"
 
 export default function Slider2() {
@@ -16,7 +16,7 @@ export default function Slider2() {
     <div className='Slider2'>
       <Slider {...settings}>
         {
-          initialNewsSliderState.map(elem=>{
+          initialNewsState.map(elem=>{
             return(
               <div key={elem.id}>
                 <img src={elem.image}/>

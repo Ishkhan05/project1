@@ -10,7 +10,7 @@
   i{
     position: fixed;
     top: 90px;
-    right: 460px;
+    right: 450px;
     color: rgba(255, 255, 255, 0.41);
     &:hover{
       scale: 1.1;
@@ -53,10 +53,14 @@
         }
       }
     }
-    a{
+    span{
       font-size: 14px;
       font-weight: 600;
       color: rgba(231, 66, 106, 1);
+      cursor: pointer;
+      &:hover{
+        scale: 1.05;
+      }
     }
   }
 }

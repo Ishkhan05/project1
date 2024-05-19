@@ -28,13 +28,13 @@ export default function Footer() {
           <h4>INFO</h4>
           <Link to="/">About the company</Link>
           <Link to={ROUTES.GUARANTEES}>Guarantees of taste and freshness</Link>
-          <Link to="/">Delivery and payment</Link>
-          <Link to="/">Contacts</Link>
+          <Link to={ROUTES.DELIVERY}>Delivery and payment</Link>
+          <Link to={ROUTES.CONTACTS}>Contacts</Link>
         </div>
         <div className='catalog_links'>
           <h4>CATALOG</h4>
           <Link to="/">Dessert catalog</Link>
-          <Link to="/">Ready-made kits</Link>
+          <Link to={ROUTES.READY_KITS}>Ready-made kits</Link>
           <Link to="/">Assemble your own set</Link>
           <Link to="/">Stocks</Link>
         </div>

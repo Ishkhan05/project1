@@ -1,0 +1,88 @@
+.Delivery{
+  padding: 3em;
+  &_content1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 0 50px 0 ;
+    .left_side{
+      height: 400px;
+      width: 40%;
+      padding: 2em;
+      position: relative;
+      img{
+        position: absolute;
+      }
+      .bicycle{
+        top: 150px;
+      }
+      .wheel1{
+        top: 235px;
+        left: 30px;
+      }
+      .wheel2{
+        top: 220px;
+        left: 260px;
+      }
+      .leaf{
+        top: 90px;
+      }
+      .ellipse1{
+        width: 231px;
+        height: 231px;
+        position: absolute;
+        top: 250px;
+        left: 300px;
+        z-index: -1;
+        background-color: rgba(250, 212, 167, 0.38);
+        border-radius: 50%;
+        filter: blur(15px);
+      }
+      .ellipse2{
+        width: 231px;
+        height: 231px;
+        position: absolute;
+        top: 250px;
+        z-index: -1;
+        background-color: rgba(255, 218, 212, 1);
+        border-radius: 50%;
+        filter: blur(25px);
+      }
+    }
+    .right_side{
+      p{
+        width: 400px;
+      }
+    }
+  } 
+  &_content2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .left_side{
+      p{
+        width: 470px;
+      }
+    }
+    .right_side{
+      height: 400px;
+      width: 300px;
+      padding: 2em;
+      position: relative;
+      img{
+        position: absolute;
+      }
+      .geo{
+        top: 50px;
+        left: 100px;
+      }
+      .cookie{
+        left: 60px;
+      }
+      .pieceOfCookie{
+        top: 60px;
+        left: 100px;
+      }
+    }
+  }
+} 

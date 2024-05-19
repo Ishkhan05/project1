@@ -13,7 +13,7 @@ export default function Home() {
       <Start />
       <Content2 />
       <Content3 />
-      <Content4 />
+      <Content4 title={"Popular sets"} button={"All holiday sets"}/>
       <Content5 />
       <Content6 />
     </div>

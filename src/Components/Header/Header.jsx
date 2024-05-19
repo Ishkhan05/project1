@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SignIn from '../Modal/SignIn/SignIn';
 import SignUp from '../Modal/SignUp/SignUp';
 import "./Header.scss"
+import ROUTES from '../../routes';
 
 export default function Header() {
   const [signIn, setSignIn] = useState(false)
@@ -32,10 +33,10 @@ export default function Header() {
       {signUp ? <SignUp handleClose={handleClose} handleLogin={handleLogin}/> :null}
       <div className='Header_head'>
         <div className='Header_head__left_side'>
-          <Link to="/">Freshness guarantee</Link>
+          <Link to={ROUTES.GUARANTEES}>Freshness guarantee</Link>
           <Link to="/">Delivery and payment</Link>
           <Link to="/">Wholesale supplies</Link>
-          <Link to="/">Contacts</Link>
+          <Link to={ROUTES.CONTACTS}>Contacts</Link>
         </div>
         <div className='Header_head__right_side'>
           <p><i className="bi bi-geo-alt"></i> Kapan</p>

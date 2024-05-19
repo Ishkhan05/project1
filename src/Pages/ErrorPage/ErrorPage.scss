@@ -1,0 +1,43 @@
+.ErrorPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3em;
+  height: 500px;
+  .ErrorPage_content{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    img{
+      position: absolute;
+    }
+    .error{
+      left: 390px;
+    }
+    .cookie{
+      left: 510px;
+    }
+    .pieceOfCookie{
+      left: 570px;
+    }
+    .sad{
+      top: 100px;
+      left: 640px;
+    }
+  }
+  a{
+    width: 234px;
+    height: 50px;
+    border: 1px solid rgba(231, 66, 106, 1);
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgba(231, 66, 106, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      scale: 0.99;
+    }
+  }
+}

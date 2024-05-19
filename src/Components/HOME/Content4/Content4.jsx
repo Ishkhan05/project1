@@ -4,11 +4,11 @@ import { getAllItems } from '../../../features/PopularSets/popularSetsSlice'
 import "./Content4.scss"
 import { Link } from 'react-router-dom'
 
-export default function Content4() {
+export default function Content4({title, button}) {
   const sets = useSelector(getAllItems)
   return (
     <div className='Content4'>
-      <h1>Popular sets</h1>
+      <h1>{title}</h1>
       <div className='Content4_items'>
         {
           sets.map(elem=>{
@@ -31,7 +31,7 @@ export default function Content4() {
           })
         }
       </div>
-      <Link to="/">All holiday sets</Link>
+      <Link to="/">{button}</Link>
     </div>
   )
 }

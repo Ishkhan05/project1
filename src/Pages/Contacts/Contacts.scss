@@ -1,0 +1,16 @@
+.Contacts{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3em;
+  h1{
+    font-size: 42px;
+    line-height: 51.2px;
+  }
+  h3{
+    margin-top: 40px;
+  }
+  p{
+    line-height: 23.4px;
+  }
+}

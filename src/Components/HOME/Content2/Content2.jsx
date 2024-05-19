@@ -14,7 +14,7 @@ export default function Content2() {
           return(
             <div key={elem.id} style={{backgroundImage: `url(${elem.bgImage})`}}>
               <img src={elem.image} />
-              <Link to="/">{elem.title} <i className="bi bi-arrow-right"></i></Link>
+              <Link to={elem.route}>{elem.title} <i className="bi bi-arrow-right"></i></Link>
               <p>{elem.desc}</p>
             </div>
           )

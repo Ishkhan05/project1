@@ -4,10 +4,13 @@ import SignIn from '../Modal/SignIn/SignIn';
 import SignUp from '../Modal/SignUp/SignUp';
 import "./Header.scss"
 import ROUTES from '../../routes';
+import { getProduct } from '../../features/Products/productsSlice';
+import { useSelector } from 'react-redux';
 
 export default function Header() {
   const [signIn, setSignIn] = useState(false)
   const [signUp, setSignUp] = useState(false)
+  const products = useSelector(getProduct)
 
   const handleSignIn = ()=>{
     setSignIn(!signIn)
@@ -41,7 +44,7 @@ export default function Header() {
         <div className='Header_head__right_side'>
           <p><i className="bi bi-geo-alt"></i> Kapan</p>
           <p><i className="bi bi-phone"></i> 8 812 309-82-88</p>
-          <p><i className="bi bi-cart"></i> CART</p>
+          <Link to={ROUTES.CART}><i className="bi bi-cart"><span>{products.length}</span></i> CART</Link>
           <div className='login'>
             <button onClick={handleSignIn}>Sign In</button>
             <button onClick={handleSignUp}>Sign Up</button>

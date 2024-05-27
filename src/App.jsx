@@ -4,13 +4,14 @@ import Home from './Pages/Home/Home'
 import News from './Pages/News/News'
 import Guarantees from './Pages/Guarantees/Guarantees'
 import CurrentNews from './Pages/News/CurrentNews/CurrentNews'
+import Contacts from './Pages/Contacts/Contacts'
+import ErrorPage from './Pages/ErrorPage/ErrorPage'
+import ReadyKits from './Pages/Ready_madeKits/ReadyKits'
+import Delivery from './Pages/Delivery/Delivery'
 import { Route, Routes } from 'react-router-dom'
 import ROUTES from "./routes"
 import './App.css'
-import Contacts from './Pages/Contacts/Contacts'
-import ErrorPage from './Pages/ErrorPage/ErrorPage'
-import ReadyKits from './Pages/Ready_matesKits/ReadyKits'
-import Delivery from './Pages/Delivery/Delivery'
+import Cart from './Pages/Cart/Cart'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path={ROUTES.CONTACTS} element={<Contacts/>}/>
         <Route path={ROUTES.READY_KITS} element={<ReadyKits/>}/>
         <Route path={ROUTES.DELIVERY} element={<Delivery/>}/>
+        <Route path={ROUTES.CART} element={<Cart/>}/>
         <Route path='*' element={<ErrorPage />} />
       </Routes>
       <Footer/>

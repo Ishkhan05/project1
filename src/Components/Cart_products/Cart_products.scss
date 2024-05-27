@@ -1,0 +1,81 @@
+.Cart_products{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 700px;
+  .product{
+    width: 670px;
+    min-height: 120px;
+    position: relative;
+    border: 1px solid rgb(237, 237, 240);
+    padding: 1em;
+    i{
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+      &:hover{
+        scale: 1.1;
+      }
+    }
+    &__content{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h3{
+        width: 300px;
+      }
+      img{
+        height: 100px;
+      }
+      &-count{
+        display: flex;
+        justify-content: space-between;
+        width: 75px;
+        height: 20px;
+        font-size: 16px;
+        h4{
+          margin: 0;
+        }
+        button{
+          width: 20px;
+          height: 20px;
+          border-radius: 3px;
+          font-size: 18px;
+          border: 1px solid rgba(41, 41, 41, 0.1);
+          background-color: rgba(238, 238, 238, 0);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          &:hover{
+            scale: 1.05;
+          }
+        }
+      }
+      p{
+        width: 100px;
+        font-size: 14px;
+        font-weight: 600;
+        span{
+          color: rgba(231, 66, 106, 1);
+        }
+      }
+    }
+  }
+  .Clear_btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: royalblue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover{
+      scale: 1.05;
+    }
+  }
+}

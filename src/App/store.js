@@ -2,6 +2,7 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import chooseSlice from '../features/Choose/chooseSlice';
 import popularSetsSlice from '../features/PopularSets/popularSetsSlice';
 import careSlice from '../features/Care/careSlice';
+import productsSlice from '../features/Products/productsSlice';
 
 import {
   persistStore,
@@ -15,17 +16,19 @@ import {
 } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
+
 const persistConfig = {
   key: 'root',
   version: 1,
   storage,
-  whitelist: ['choose', 'popularSets','care'],
+  whitelist: ['choose', 'popularSets','care','products'],
 }
 
 const rootReducer = combineReducers({
   choose: chooseSlice,
   popularSets: popularSetsSlice,
-  care: careSlice
+  care: careSlice,
+  products: productsSlice
 })
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)

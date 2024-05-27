@@ -42,7 +42,7 @@ export default function Delivery() {
         </div>
       </div>
       <div className='Delivery_content3'>
-
+        <img src="/Images/Delivery_images/map.png"/>
       </div>
     </div>
   )

@@ -1,11 +1,13 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { getAllItems } from '../../../features/PopularSets/popularSetsSlice'
 import "./Content4.scss"
 import { Link } from 'react-router-dom'
+import { addProduct} from '../../../features/Products/productsSlice'
 
 export default function Content4({title, button}) {
   const sets = useSelector(getAllItems)
+  const dispatch = useDispatch()
   return (
     <div className='Content4'>
       <h1>{title}</h1>
@@ -21,7 +23,7 @@ export default function Content4({title, button}) {
                 </div>
                 <div className='Content4_items_item_buy'>
                   <p>{elem.price}$</p>
-                  <button>
+                  <button onClick={()=>dispatch(addProduct(elem))}>
                     <i className="bi bi-cart"></i>
                     Into a basket
                   </button>
